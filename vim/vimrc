@@ -7,5 +7,14 @@ let g:solarized_termcolors = 256
 syntax on
 filetype plugin indent on
 
+" indenting
+filetype plugin indent on
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 " key bindings
 map <C-n> :NERDTreeToggle<CR> "Ctrl + n opens nerd tree
+
+" airline
+set laststatus=2
