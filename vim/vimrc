@@ -16,5 +16,24 @@ set expandtab
 " key bindings
 map <C-n> :NERDTreeToggle<CR> "Ctrl + n opens nerd tree
 
+" make backspace great again
+nnoremap <BS> X
+
+set number
+set mouse=a
+
+" the silver searcher
+let g:ackprg = 'ag --vimgrep'
+
+" ctrl p settings
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" git gutter
+let g:gitgutter_sign_column_always = 1
+
 " airline
 set laststatus=2
+
+" side bar settings
+highlight LineNr ctermfg=darkgrey
+highlight LineNr ctermbg=black
